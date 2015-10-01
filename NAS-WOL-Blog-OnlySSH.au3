@@ -40,8 +40,6 @@ While 1
 		$nMsg = GUIGetMsg() ;abfangen des Drücken Events
 		Select
 			Case $nMsg = $GUI_EVENT_CLOSE ;X wird gedrückt
-				UDPCloseSocket($Broadcast)
-				UDPShutdown()
 				Exit
 			Case $nMsg = $Button1 ;Start
 				Run("C:\Putty\plink -ssh -P 22 -pw passwort admin@0.0.0.0 path/script name")
